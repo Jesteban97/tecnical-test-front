@@ -11,22 +11,22 @@ export default function instanceApi(
   const tokenToSend = token ?? localStorage.getItem("token")
 
   api.interceptors.request.use(
-    (req) => {
+    (req:any) => {
       if (tokenToSend) {
         req.headers.Authorization = `Bearer ${tokenToSend}`;
       }
       return req;
     },
-    (err) => {
+    (err:any) => {
       throw err;
     }
   );
 
   api.interceptors.response.use(
-    (response) => {
+    (response:any) => {
       return response.data;
     },
-    (error) => {
+    (error:any) => {
       throw error;
     }
   );
