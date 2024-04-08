@@ -1,5 +1,5 @@
 import { Button } from "primereact/button";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Main = () => {
   const navigate = useNavigate();
   return (

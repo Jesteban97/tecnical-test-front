@@ -1,7 +1,7 @@
 import { InputText } from "primereact/inputtext";
 import { Button } from 'primereact/button';
-import React, { useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import  { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
   const navigate = useNavigate();
