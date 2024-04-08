@@ -8,7 +8,7 @@ export default function instanceApi(
     baseURL: baseURL,
   });
 
-  const tokenToSend = token || localStorage.getItem("token")
+  const tokenToSend = token ?? localStorage.getItem("token")
 
   api.interceptors.request.use(
     (req) => {

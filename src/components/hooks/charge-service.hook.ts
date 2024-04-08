@@ -7,7 +7,7 @@ export function useChargeService() {
   const baseURL: string = import.meta.env.VITE_BAKCEN_URL;
   const authUrl: string = "/api/v1";
 
-  const { get, post, put } = useCrudService(baseURL);
+  const { get, post} = useCrudService(baseURL);
 
   async function createAccount(data: any): Promise<any> {
     try {
